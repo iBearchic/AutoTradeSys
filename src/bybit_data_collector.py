@@ -1,7 +1,7 @@
 import pandas as pd
 from pybit.unified_trading import HTTP
 
-def fetch_klines(symbol, interval, start, end) -> pd.DataFrame:
+def fetch_klines(symbol: str, interval: int, start: int, end: int) -> pd.DataFrame:
     """
     Получает исторические данные курсов для заданной криптовалютной пары с Bybit.
 
